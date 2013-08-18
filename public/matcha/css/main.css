@@ -1,0 +1,16 @@
+body {
+  margin: 0 auto;
+  max-width: 322px;
+}
+
+#container {
+  min-height: 800px;
+}
+
+#content {
+  height: 100%;
+}
+
+#footer {
+  text-align: center;
+}

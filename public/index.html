@@ -1,20 +1,66 @@
+<!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
-<link rel="stylesheet" type="text/css" href="matcha/css/matcha-style.css">
-<script src="bootstrap/js/bootstrap.js"></script>
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Matcha! - Empowering children to be more productive</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="matcha/css/matcha-style.css">
+    <link rel="stylesheet" type="text/css" href="matcha/css/main.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <h1>Matcha</h1>
+        <form>
+          <div class="span4"><label for="inputEmail">Email</label></div>
+          <div class="span8"><input type="text" id="inputEmail" placeholder="Email"></div>
 
-<body>
-  <div id="container">
-    <div class="center-text" id="content">
-      <span class="big-text green-text bold-text"><br/><br/>MATCHA<br/></span>
-    </div>
-  </div>
+          <div class="span4"><label for="inputPassword">Password</label></div>
+          <div class="span8"><input type="password" id="inputPassword" placeholder="Password"></div>
+          <div class="span12">
+            <label class="checkbox"> <input type="checkbox"> Remember me</label>
+          </div>
+          <div class="span12">
+            <button type="submit" class="btn">Sign in</button> &nbsp; &nbsp;
+            <a href="#" id="LoginWithAmazon">
+              <img border="0" alt="Login with Amazon"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
+              width="156" height="32" />
+            </a>
+          </div>
+        </form>
+      </div>
 
-  <div class="center-text" id="footer">
-    <a href="index.html"><img src="matcha/img/home.png"/></a><a href="marketplace.html"><img src="matcha/img/marketplace.png"/></a><a href="tasks.html"><img src="matcha/img/tasks.png"/></a><a href="settings"><img src="matcha/img/settings.png"/></a>
-  </div>
-</body>
+      <div class="row-fluid" id="footer">
+        <div class="span12">
+          <a href="index.html"><img src="matcha/img/home.png"/></a><a href="marketplace.html"><img src="matcha/img/marketplace.png"/></a><a href="tasks.html"><img src="matcha/img/tasks.png"/></a><a href="settings"><img src="matcha/img/settings.png"/></a>
+        </div>
+      </div>
+
+
+      <!--- BEGIN OF AMAZON LOGIN -->
+      <div id="amazon-root"></div>
+      <script type="text/javascript">
+        window.onAmazonLoginReady = function() {
+          amazon.Login.setClientId('amzn1.application-oa2-client.10aa150a75a74fe68b19b90ce00f8bcc');
+        };
+      (function(d) {
+       var a = d.createElement('script'); a.type = 'text/javascript';
+       a.async = true; a.id = 'amazon-login-sdk';
+       a.src = 'https://api-cdn.amazon.com/sdk/login1.js';
+       d.getElementById('amazon-root').appendChild(a);
+       })(document);
+
+      document.getElementById('LoginWithAmazon').onclick = function() {
+        options = { scope : 'profile' };
+        amazon.Login.authorize(options, 'https://sw-matcha.herokuapp.com/tasklist.html');
+        return false;
+      };
+
+      </script>
+      <!-- END OF AMAZON LOGIN -->
+      <script src="//code.jquery.com/jquery.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
