@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Corki</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--
+    <div class="alert alert-warning" id="header-message" style="display:none">
+      <span id="header-close" style="float: right; cursor: pointer">Close [X]</span>
+      We're in Global StartUp Weekend, and we need your help! Vote at <a href="http://bit.ly/votecorki">bit.ly/votecorki</a>
+    </div>
+    -->
+
+    <div class="container">
+
+    <!-- INTRO ROW
+    ================================================== -->
+    <div class="row featurette" id="intro-row">
+      <div class="span7">
+        <img src="img/logo.png">
+        <h2 class="featurette-heading">Introducing Corki. <span class="muted">Easy and educational app to help connect you with wines you'll love.</span></h2>
+        <p class="muted">Sign up to be the first try the beta release!</p>
+        <!-- <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> -->
+        <form class="input-prepend input-append control-group" id="email-form" method="post" action="email.php">
+          <span class="add-on"><i class="icon-envelope"></i></span>
+          <input type="text" placeholder="joe@example.com" class="input-large" name="email" id="email">
+          <button type="submit" class="btn" rel="popover" data-trigger="manual" id="submit">Sign up!</button>
+        </form>
+        <br>
+        <a href="https://twitter.com/CorkiWines" class="twitter-follow-button" data-width="450" data-show-count="true">Follow @CorkiWines</a> &middot;
+        <span class="fb-like" data-href="http://www.facebook.com/CorkiWines" data-send="false" data-width="450" data-show-faces="false"></span>
+      </div>
+
+      <div class="span5" id="screenshot-container">
+        <img src="img/screen/nexus-frame.png" id="carousel-frame">
+        <div id="screenshot-carousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="item active"><img src="img/screen/01.png"></div>
+            <div class="item"><img src="img/screen/02.png"></div>
+            <div class="item"><img src="img/screen/03.png"></div>
+          </div>
+          <!--
+          <a class="carousel-control left" href="#screenshot-carousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#screenshot-carousel" data-slide="next">&rsaquo;</a>
+          -->
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <!-- PROMO
+    ================================================== 
+    <div class="row" style="text-align:center">
+      <h1>We're in Global Startup Weekend!</h1>
+      <iframe src="http://player.vimeo.com/video/53924051?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="850" height="470" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      <a class="btn btn-warning" style="height:200px; width: 822px" href="http://bit.ly/votecorki">
+        <div style="font-size:5em; line-height:200px" class="lead">Vote now!</div>
+        <div style="position:relative; display:block; top: -3.4em" class="lead">bit.ly/votecorki</div>
+      </a>
+    </div>
+
+    <hr class="featurette-divider"> -->
+
+    <!-- BIO PAGE
+    ================================================== -->
+    <h1>Meet our team</h1>
+    <div class="row">
+      <div class="span8" id="bio-row">
+        <div class="row">
+          <div class="span2">
+            <a href="#bio-william" class="scroll">
+              <img class="img-circle bio-img" src="img/bio/william.jpg">
+              <span class="lead">William</span><span class="lead muted">Chen</span>
+            </a>
+          </div>
+          <div class="span2">
+            <a href="#bio-harini" class="scroll">
+              <img class="img-circle bio-img" src="img/bio/harini.jpg">
+              <span class="lead">Harini</span><span class="lead muted">Jagadessan</span>
+            </a>
+          </div>
+          <div class="span2">
+            <a href="#bio-stephen" class="scroll">
+              <img class="img-circle bio-img" src="img/bio/stephen.jpg">
+              <span class="lead">Stephen</span><span class="lead muted">Klein</span>
+            </a>
+          </div>
+          <div class="span2">
+            <a href="#bio-kathryn" class="scroll">
+              <img class="img-circle bio-img" src="img/bio/kathryn.jpg">
+              <span class="lead">Kathryn</span><span class="lead muted">Kuan</span>
+            </a>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="span2">
+            <a href="#bio-gabe" class="scroll">
+              <img class="img-circle bio-img" src="img/bio/gabe.jpg">
+              <span class="lead">Gabe</span><span class="lead muted">Pelegrin</span>
+            </a>
+          </div>
+          <div class="span2">
+            <a href="#cynthia" class="scroll">
+              <img class="img-circle bio-img" src="img/bio/cynthia.jpg">
+              <span class="lead">Cynthia</span><span class="lead muted">Schulte</span>
+            </a>
+          </div>
+          <!--
+          <div class="span2">
+            <img class="img-circle bio-img" src="http://placehold.it/140x140">
+            <span class="lead">Joe</span><span class="lead muted">Shoop</span>
+          </div>
+          -->
+          <div class="span2">
+            <a href="#bio-michael" class="scroll">
+              <img class="img-circle bio-img" src="img/bio/michael.jpg">
+              <span class="lead">Michael</span><span class="lead muted">Wu</span>
+            </a>
+          </div>
+        </div>
+      </div> <!-- /span8 -->
+      <div class="span4">
+        <div id="bio-content">
+          <div id="bio-content-top"></div>
+          <p id="bio-william">William is a software tester at Microsoft, who in his spare time likes to read, travel, meet new people, and play sports. Grown up in Dallas, Texas, he has also lived in New Zealand and Taiwan. He holds a B.S. degree in Computer Science, from Texas A&amp;M University</p>
+          <p id="bio-harini">Harini grew up in India surrounded by entrepreneurs and has always dreamed of starting a business of her own. A gold medalist, she holds a degree in Computer Engineering from Virginia Tech and currently works in Microsoft developing cool software that reaches millions of users. She is passionate about technology, business and creating new things. An avid reader, she is often found reading and debating about myriad stuff. She also loves hiking, travel and is a foodie to boot! You can find her at jharini14 at gmail dot com or tweet her at jharini.</p>
+          <p id="bio-stephen">Stephen graduated from Arizona State University with a B.S. in Business Communication and currently does Marketing for Stanley Black &amp; Decker. At Corki, Stephen acts as the CMO and Business Strategist.</p>
+          <p id="bio-kathryn">Kathryn Kuan is a student at the University of Washington pursuing degrees in Business Finance and Informatics HCI. She has a passion for designing technology around people and hopes to pursue a career in UX. Between school and work, Kathryn enjoys video games, board games, drawing, eating and shopping. She also loves music as a hobby and plays numerous instruments including piano, violin, saxophone, and handbells. At Corki, Kathryn has worked on business strategy, concept design, and field research.</p>
+          <p id="bio-gabe">Gabe packs a lot of punch in a small frame. With a background in marketing and design, it's no wonder he has a penchant for building cool things in the physical world and online. He can tell you how to position your brand, how to implement your message strategy, and possibly build your site. Gabe previously used his powers for good at the Ablola Group online agency launching SEO client's strategies and helping InternMatch launch a westcoast rollout. These days, he can be found at Startup Weekend HQ designing cool tools for organizers and attendees and making Startup Weekend a house hold name for anyone with an idea.</p>
+          <p id="bio-cynthia">Cynthia Schulte is an avid wine enthusiast, so it’s no wonder she joined the Corki team.  She is currently a marketing manager in the manufacturing industry where she focuses on branding and online marketing.  She received her Bachelor of Arts degree from the University of Washington and her Master of Business Administration from Portland State University.  Her personal philosophy is to seize opportunity when it presents itself, which is apparent from her career choices.  She has worked in Ecuador teaching English, acted a liaison between cruise ships and a helicopter company in Alaska and managed large events for a non-profit in Seattle.  In her spare time, you can find her traveling, be it locally or around the globe.</p>
+          <p id="bio-michael">Michael Wu is a software developer at Microsoft who during his spare time enjoys doing math, listening to opera, singing in the choir, drinking wine and collecting bow ties. Grown up in Shanghai China, he studied math and computer science at Caltech, where he also resuscitated the wine club during his senior year. Michael is very excited to work on Corki and thinks that it will make the richness and excitement in wine culture accessible to everyone.</p>
+        </div>
+      </div> <!-- /span4 -->
+    </div> <!-- /row -->
+
+    <hr class="featurette-divider">
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2012 Corki &middot; <a href="mailto:info@corki.co">Contact Us</a> &middot;
+        <a href="https://twitter.com/CorkiWines" class="twitter-follow-button" data-show-count="true">@CorkiWines</a> &middot;
+        <span class="fb-like" data-href="http://www.facebook.com/CorkiWines" data-layout="button_count" data-send="false" data-show-faces="false"></span>
+      </p>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=455631354480995"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      /* carousel */
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#screenshot-carousel').carousel()
+        })
+      }(window.jQuery)
+      /* google analytics */
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36444359-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      /* bio */
+      $(".scroll").click(function(event){   
+        event.preventDefault();
+        var offset = $(this.hash).offset().top - $("#bio-content-top").offset().top;
+        $('#bio-content').animate({scrollTop:offset}, 'slow');
+      });
+      /* header message */
+      $("#header-message").slideUp(300).delay(1500).fadeIn(400);
+      $("#header-close").click(function() { $("#header-message").fadeOut() });
+      /* email validation */
+      function validateEmail(email) { 
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      } 
+      $("#email-form").submit(function(event) {
+        event.preventDefault();
+        $("#submit").popover('destroy');
+        var $form = $(this),
+            term = $form.find( 'input[name="email"]' ).val(),
+            url = $form.attr( 'action' );
+        // if email validation fails
+        if(! validateEmail($("#email").val()) ) {
+          $(this).addClass("error");
+          $("#submit").popover({"title":"Invalid email address!"});
+          $("#submit").popover('show');
+          return;
+        }
+        // if email validates
+        $(this).removeClass("error");
+        $.post( url, { "email": term },
+          function( data ) {
+           var content = data;
+           $("#submit").popover({"title":content});
+           $("#submit").popover('show');
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

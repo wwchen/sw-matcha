@@ -1,0 +1,3 @@
+<% test = "hello" %>
+
+say <%= test %>
