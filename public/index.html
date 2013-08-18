@@ -27,13 +27,28 @@
   <div id="container">
     <div class="center-text" id="content">
       <span class="big-text green-text bold-text"><br/><br/>MATCHA<br/><br /><br /></span>
-    <form method="post" action="">
-      <input id="username" name="username" /><br />
-      <input id="password" name="password" /><br />
-<div class="right-text">
-      <input id="submit" value="Login" type="submit" />
-</div>
-    </form>
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Email</label>
+    <div class="controls">
+      <input type="text" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPassword">Password</label>
+    <div class="controls">
+      <input type="password" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        <input type="checkbox"> Remember me
+      </label>
+      <button type="submit" class="btn">Sign in</button>
+    </div>
+  </div>
+</form>
 
 <a href="#" id="LoginWithAmazon">
   <img border="0" alt="Login with Amazon"
