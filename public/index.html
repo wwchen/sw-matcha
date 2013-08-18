@@ -54,7 +54,7 @@
 
       document.getElementById('LoginWithAmazon').onclick = function() {
         options = { scope : 'profile' };
-        amazon.Login.authorize(options, 'https://www.gomatch.co/handle_login.rb');
+        amazon.Login.authorize(options, 'https://sw-matcha.herokuapp.com/tasklist.html');
         return false;
       };
 
