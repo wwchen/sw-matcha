@@ -19,3 +19,17 @@ body > #container { width: 400px; margin: auto; height: auto; min-height: 100%; 
 .green-text { color: green;  }
 */
 .center-text { text-align: center;  }
+
+@font-face
+{
+  font-family: ourfont;
+  src: url('../KGTheLastTimeBubble.ttf')
+}
+
+h1 {
+  background-image: url("../img/broom.png");
+  /*padding-left: 40px;*/
+  font-family: ourfont;
+  text-align: left;
+  color: green;
+}
