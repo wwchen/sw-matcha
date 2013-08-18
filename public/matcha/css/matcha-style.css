@@ -18,3 +18,17 @@ body > #container { width: 400px; margin: auto; height: auto; min-height: 100%; 
 .bold-text { font-weight: bold;  }
 .green-text { color: green;  }
 */
+
+@font-face
+{
+font-family: ourfont;
+src: url('../KGTheLastTimeBubble.ttf')
+}
+
+h1 {
+background-image: url("../img/broom.png");
+padding-left: 40px;
+font-family: ourfont;
+text-align: right;
+color: green;
+}
