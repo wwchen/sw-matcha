@@ -18,3 +18,4 @@ body > #container { width: 400px; margin: auto; height: auto; min-height: 100%; 
 .bold-text { font-weight: bold;  }
 .green-text { color: green;  }
 */
+.center-text { text-align: center;  }
