@@ -1,6 +1,10 @@
 /*
+body {
+padding: 0;
+margin: 0;
+}
 html, body, #container { height: 100%; }
-body > #container { width: 400px; margin: auto; height: auto; min-height: 100%; }
+body > #container { width: 340px; margin: auto; height: auto; min-height: 100%; }
 
 
 #footer {
