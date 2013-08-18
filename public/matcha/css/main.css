@@ -1,6 +1,14 @@
 body {
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 322px;
+}
+
+#container {
+  min-height: 600px;
+}
+
+#content {
+  height: 100%;
 }
 
 #footer {
