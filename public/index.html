@@ -8,67 +8,43 @@
     <link rel="stylesheet" type="text/css" href="matcha/css/matcha-style.css">
     <link rel="stylesheet" type="text/css" href="matcha/css/main.css">
   </head>
-<body>
-<div id="amazon-root"></div>
-<script type="text/javascript">
+  <body>
+    <div id="container">
+      <div id="content">
+        <h1>Matcha</h1>
+        <form>
+          <div class="span4"><label for="inputEmail">Email</label></div>
+          <div class="span8"><input type="text" id="inputEmail" placeholder="Email"></div>
 
-  window.onAmazonLoginReady = function() {
-    amazon.Login.setClientId('amzn1.application-oa2-client.10aa150a75a74fe68b19b90ce00f8bcc');
-  };
-  (function(d) {
-    var a = d.createElement('script'); a.type = 'text/javascript';
-    a.async = true; a.id = 'amazon-login-sdk';
-    a.src = 'https://api-cdn.amazon.com/sdk/login1.js';
-    d.getElementById('amazon-root').appendChild(a);
-  })(document);
-
-</script>
-
-  <div id="container">
-    <div class="center-text" id="content">
-      <span class="big-text green-text bold-text"><br/><br/>MATCHA<br/><br /><br /></span>
-<form class="form-horizontal">
-  <div class="control-group">
-    <label class="control-label" for="inputEmail">Email</label>
-    <div class="controls">
-      <input type="text" id="inputEmail" placeholder="Email">
-    </div>
-  </div>
-  <div class="control-group">
-    <label class="control-label" for="inputPassword">Password</label>
-    <div class="controls">
-      <input type="password" id="inputPassword" placeholder="Password">
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="controls">
-      <label class="checkbox">
-        <input type="checkbox"> Remember me
-      </label>
-      <button type="submit" class="btn">Sign in</button>
-    </div>
-  </div>
-</form>
-
-<a href="#" id="LoginWithAmazon">
-  <img border="0" alt="Login with Amazon"
-    src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
-    width="156" height="32" />
-</a>
-
-    <div class="row-fluid" id="footer">
-      <div class="span12">
-        <a href="index.html"><img src="matcha/img/home.png"/></a><a href="marketplace.html"><img src="matcha/img/marketplace.png"/></a><a href="tasks.html"><img src="matcha/img/tasks.png"/></a><a href="settings"><img src="matcha/img/settings.png"/></a>
+          <div class="span4"><label for="inputPassword">Password</label></div>
+          <div class="span8"><input type="password" id="inputPassword" placeholder="Password"></div>
+          <div class="span12">
+            <label class="checkbox"> <input type="checkbox"> Remember me</label>
+          </div>
+          <div class="span12">
+            <button type="submit" class="btn">Sign in</button> &nbsp; &nbsp;
+            <a href="#" id="LoginWithAmazon">
+              <img border="0" alt="Login with Amazon"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
+              width="156" height="32" />
+            </a>
+          </div>
+        </form>
       </div>
-    </div>
+
+      <div class="row-fluid" id="footer">
+        <div class="span12">
+          <a href="index.html"><img src="matcha/img/home.png"/></a><a href="marketplace.html"><img src="matcha/img/marketplace.png"/></a><a href="tasks.html"><img src="matcha/img/tasks.png"/></a><a href="settings"><img src="matcha/img/settings.png"/></a>
+        </div>
+      </div>
 
 
-    <!--- BEGIN OF AMAZON LOGIN -->
-    <div id="amazon-root"></div>
-    <script type="text/javascript">
-      window.onAmazonLoginReady = function() {
-        amazon.Login.setClientId('amzn1.application-oa2-client.10aa150a75a74fe68b19b90ce00f8bcc');
-      };
+      <!--- BEGIN OF AMAZON LOGIN -->
+      <div id="amazon-root"></div>
+      <script type="text/javascript">
+        window.onAmazonLoginReady = function() {
+          amazon.Login.setClientId('amzn1.application-oa2-client.10aa150a75a74fe68b19b90ce00f8bcc');
+        };
       (function(d) {
        var a = d.createElement('script'); a.type = 'text/javascript';
        a.async = true; a.id = 'amazon-login-sdk';
@@ -82,9 +58,9 @@
         return false;
       };
 
-    </script>
-    <!-- END OF AMAZON LOGIN -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+      </script>
+      <!-- END OF AMAZON LOGIN -->
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
