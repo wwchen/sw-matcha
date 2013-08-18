@@ -30,6 +30,10 @@ body > #container { width: 340px; margin: auto; height: auto; min-height: 100%; 
   src: url('../KGTheLastTimeBubble.ttf')
 }
 
+#header {
+  background-color: green;
+}
+
 h1 {
   background-color: green;
   margin: 0px;
@@ -38,4 +42,13 @@ h1 {
   font-family: ourfont;
   text-align: left;
   color: white;
+}
+
+#header h2 {
+  font-size: 1em;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  padding-top: 0;
+  line-height: 1em;
 }
