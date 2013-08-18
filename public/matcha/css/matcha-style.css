@@ -1,3 +1,4 @@
+/*
 html, body, #container { height: 100%; }
 body > #container { height: auto; min-height: 100%; }
 
@@ -16,3 +17,4 @@ body > #container { height: auto; min-height: 100%; }
 .big-text { font-size: 46px;  }
 .bold-text { font-weight: bold;  }
 .green-text { color: green;  }
+*/
